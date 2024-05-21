@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03085F58-261D-4EF6-ADFE-C1A0489634B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_Grifindo_Toys</RootNamespace>
+    <AssemblyName>Project Grifindo Toys</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="applied_Leaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="applied_Leaves.Designer.cs">
+      <DependentUpon>applied_Leaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attandance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attandance.Designer.cs">
+      <DependentUpon>Attandance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Commom class.cs" />
+    <Compile Include="Class\Database.cs" />
+    <Compile Include="Class\ValidateCombo.cs" />
+    <Compile Include="employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="experience.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="experience.Designer.cs">
+      <DependentUpon>experience.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gender.Designer.cs">
+      <DependentUpon>gender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Holiday.Designer.cs">
+      <DependentUpon>Holiday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leave.Designer.cs">
+      <DependentUpon>leave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\IResources.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ResourcesBase.cs" />
+    <Compile Include="salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salary.Designer.cs">
+      <DependentUpon>salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salaryColculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salaryColculation.Designer.cs">
+      <DependentUpon>salaryColculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setting.Designer.cs">
+      <DependentUpon>setting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="applied_Leaves.resx">
+      <DependentUpon>applied_Leaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attandance.resx">
+      <DependentUpon>Attandance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee.resx">
+      <DependentUpon>employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="experience.resx">
+      <DependentUpon>experience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gender.resx">
+      <DependentUpon>gender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Holiday.resx">
+      <DependentUpon>Holiday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leave.resx">
+      <DependentUpon>leave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salary.resx">
+      <DependentUpon>salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salaryColculation.resx">
+      <DependentUpon>salaryColculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setting.resx">
+      <DependentUpon>setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\20230822_031715_0000.png" />
+    <Content Include="Resources\20230822_031822_0000.png" />
+    <Content Include="Resources\icons8-admin-32.png" />
+    <Content Include="Resources\icons8-attendance-30.png" />
+    <Content Include="Resources\icons8-attendance-301.png" />
+    <Content Include="Resources\icons8-attendance-80.png" />
+    <Content Include="Resources\icons8-employees-30.png" />
+    <Content Include="Resources\icons8-employees-301.png" />
+    <Content Include="Resources\icons8-employees-302.png" />
+    <Content Include="Resources\icons8-employees-303.png" />
+    <Content Include="Resources\icons8-experience-30.png" />
+    <Content Include="Resources\icons8-experience-301.png" />
+    <Content Include="Resources\icons8-gender-34.png" />
+    <Content Include="Resources\icons8-holiday-30.png" />
+    <Content Include="Resources\icons8-holiday-301.png" />
+    <Content Include="Resources\icons8-leave-48.png" />
+    <Content Include="Resources\icons8-leave-481.png" />
+    <Content Include="Resources\icons8-leave-house-48.png" />
+    <Content Include="Resources\icons8-leave-house-481.png" />
+    <Content Include="Resources\icons8-monitor-24.png" />
+    <Content Include="Resources\icons8-monitor-241.png" />
+    <Content Include="Resources\icons8-monitor-242.png" />
+    <Content Include="Resources\icons8-salary-30.png" />
+    <Content Include="Resources\icons8-salary-301.png" />
+    <Content Include="Resources\icons8-setting-24.png" />
+    <Content Include="Resources\icons8-setting-48.png" />
+    <Content Include="Resources\icons8-setting-50 %281%29.png" />
+    <Content Include="Resources\icons8-setting-50.png" />
+    <Content Include="Resources\New Project 26 [A123E43].png" />
+    <Content Include="Resources\New-Project-26-_A123E43_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-48 %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
